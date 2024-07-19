@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 8px;
+        }
+        input[type=text], input[type=password], input[type=submit] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="reg.jsp" method="post">
+            <table>
+                <tr><td>First Name</td><td><input type="text" name="firstname" required /></td></tr>
+                <tr><td>Last Name</td><td><input type="text" name="lastname" required/></td></tr>
+                <tr><td>Username</td><td><input type="text" name="username" required/></td></tr>
+                <tr><td>Password</td><td><input type="password" name="password" required/></td></tr>
+                <tr><td colspan="2"><input type="submit" value="Register"/></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
